@@ -48,12 +48,13 @@
       <section class="feedback">
         <h2 class="visually-hidden">Поля формы отзыва</h2>
         <form class="feedback__form" id="form-fieldset" action="https://echo.htmlacademy.ru" method="post">
+
           <div class="author-data">
             <p class="author-data__slogan">Представьтесь:</p>
             <ul class="author-data__list">
               <li class="author-data__item">
                 <label class="author-data__heading" for="name">Имя*:</label>
-                <input class="author-data__field" type="text" name="name" id="name" value="Петр" required>
+                <input class="author-data__field author-data__field--name" type="text" name="name" id="name" value="Петр" required>
               </li>
               <li class="author-data__item">
                 <label class="author-data__heading" for="surname">Фамилия*:</label>
@@ -122,7 +123,7 @@
 
           <div class="essay">
             <p class="essay__slogan">Опишите свои эмоции:</p>
-            <textarea class="essay__field" name="essay" rows="6" cols="32" placeholder="Опишите подробно все свои восторги">
+            <textarea class="essay__field" name="essay" rows="6" cols="29" placeholder="Опишите подробно все свои восторги">
             </textarea>
           </div>
           <button class="feedback__btn" type="submit">Отправить отзыв</button>
