@@ -59,9 +59,49 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #eeeeee;
 }
 
+@media(min-width: @tablet-width){
+  .reasons{
+    display: flex;
+    flex-direction: column;
+  }
 
+  .reasons__line-1{
+    display: flex;
+  }
 
+  .reasons__line-2{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .reasons__blue-block{
+    box-sizing: border-box;
+    width: 256px;
+    padding: 47px;
+  }
+
+  .reasons__features-list,
+  .reasons__pros-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reasons__item{
+    width: 256px;
+  }
+}
+
+@media(min-width: @desktop-width){
+  .reasons__blue-block{
+    width: 400px;
+  }
+
+  .reasons__item{
+    width: 400px;
+  }
+}
 
 
