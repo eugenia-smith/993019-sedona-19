@@ -1,7 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -16,8 +15,7 @@ a{
 
 .wrap-all{
   width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .visually-hidden{
@@ -26,4 +24,16 @@ a{
   widows: 1px;
   height: 1px;
   margin: -1px;
+}
+
+@media(min-width: @tablet-width){
+  .wrap-all{
+    min-width: 768px;
+  }
+}
+
+@media(min-width: @desktop-width){
+  .wrap-all{
+    min-width: 1200px;
+  }
 }
