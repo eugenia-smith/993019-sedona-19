@@ -1,5 +1,7 @@
 .author-data{
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .author-data__slogan{
@@ -47,10 +49,25 @@
     min-height: 50px;
     border: 4px solid #e5e5e5;
     background-color: #ffffff;
-
   }
 }
 
 .author-data__field--name{
   width: 230px;
+}
+
+@media(min-width: @tablet-width){
+
+  .author-data{
+    align-items: flex-start;
+    width: 324px;
+  }
+}
+
+@media(min-width: @desktop-width){
+
+  .author-data{
+    width: 480px;
+  }
+
 }

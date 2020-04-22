@@ -1,4 +1,7 @@
 .essay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -18,4 +21,27 @@
   text-transform: none;
   text-align: left;
   color: #000000;
+}
+
+@media(min-width: @tablet-width){
+
+  .essay{
+    width: 648px;
+  }
+
+  .essay__field{
+    width: 100%;
+  }
+}
+
+@media(min-width: @desktop-width){
+  .essay{
+    margin-top: 58px;
+    width: 960px;
+  }
+
+  .essay__field{
+    width: 100%;
+  }
+
 }
