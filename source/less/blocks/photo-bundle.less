@@ -1,13 +1,11 @@
 .photo-bundle{
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .photo-bundle__item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
 }
 
 .photo-bundle__scape{
@@ -58,11 +56,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 648px;
+    padding: 0 60px;
   }
 
   .photo-bundle__item:first-child{
-    width: 648px;
+    width: 100%;
   }
 
   .photo-bundle__item{
@@ -78,6 +76,7 @@
 @media(min-width: @desktop-width){
   .photo-bundle{
     width: 100%;
+    padding: 0px;
   }
 
   .photo-bundle__item:first-child{
