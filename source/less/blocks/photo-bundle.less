@@ -1,8 +1,4 @@
 .photo-bundle{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -58,7 +54,9 @@
 
 @media(min-width: @tablet-width){
   .photo-bundle{
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     width: 648px;
   }
@@ -79,8 +77,6 @@
 
 @media(min-width: @desktop-width){
   .photo-bundle{
-    flex-direction: row;
-    justify-content: flex-start;
     width: 100%;
   }
 

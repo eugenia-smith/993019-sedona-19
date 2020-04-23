@@ -18,6 +18,16 @@
 }
 
 .doubts__video-wrapper{
+  position: relative;
+
+}
+
+.doubts__video{
+  display: block;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 201px;
 
 }
 
@@ -26,6 +36,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: -52px;
+  position: absolute;
+  left: 20px;
 }
 
 .doubts__control-toggle{
@@ -53,24 +65,26 @@
     font-size: 30px;
   }
 
-  .doubts__video-wrapper{
+  .doubts__video{
     min-height: 499px;
     width: 648px;
   }
 
   .doubts__controls{
     flex-direction: row;
+    min-height: 93px;
     width: 100%;
+    left: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   .doubts__control-toggle{
-    width: 389px;
-    background-color: transparent;
+    display: none;
 }
 
   .doubts__control-buttons{
-    background-color: transparent;
+    display: none;
   }
 
 }
