@@ -1,7 +1,5 @@
 .author-data{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
 }
 
 .author-data__slogan{
@@ -45,8 +43,6 @@
   }
 
   &:focus{
-    width: 184px;
-    min-height: 50px;
     border: 4px solid #e5e5e5;
     background-color: #ffffff;
   }
@@ -59,8 +55,18 @@
 @media(min-width: @tablet-width){
 
   .author-data{
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     width: 324px;
+  }
+
+  .author-data__field{
+    width: 178px;
+  }
+
+  .author-data__field--name{
+    width: 216px;
   }
 }
 
@@ -70,4 +76,11 @@
     width: 480px;
   }
 
+  .author-data__field{
+    width: 314px;
+  }
+
+  .author-data__field--name{
+    width: 350px;
+  }
 }

@@ -1,7 +1,5 @@
 .author-contacts{
-display: flex;
-flex-direction: column;
-align-items: center;
+
 }
 
 .author-contacts__slogan{
@@ -44,8 +42,6 @@ align-items: center;
   }
 
   &:focus{
-    width: 272px;
-    min-height: 50px;
     border: 4px solid #e5e5e5;
     background-color: #ffffff;
   }
@@ -53,6 +49,12 @@ align-items: center;
 
 
 @media(min-width: @tablet-width){
+
+  .author-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .author-contacts{
     align-items: center;
