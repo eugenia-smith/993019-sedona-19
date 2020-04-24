@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео Седоны</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -25,7 +27,7 @@
           </li>
         </ul>
       </nav>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <button class="page-header__toggle" type="button">Menu</button>
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
       </a>
@@ -49,34 +51,42 @@
           <li class="photo-bundle__item">
             <figure class="photo-bundle__scape">
               <img class="photo-bundle__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Дорога, уходящая в закат">
-              <figcaption class="photo-bundle__caption">Неродные просторы</figcaption>
+              <figcaption class="photo-bundle__caption-wrapper">
+              <p class="photo-bundle__caption">Неродные просторы</p>
+              <p class="photo-bundle__author">Автор фото: Борис</p>
+              <p class="photo-bundle__rating photo-bundle__rating--thumb-up">1350</p>
+              </figcaption>
             </figure>
-            <p class="photo-bundle__author">Автор фото: Борис</p>
-            <p class="photo-bundle__rating photo-bundle__rating--thumb-up">1350</p>
           </li>
           <li class="photo-bundle__item">
             <figure class="photo-bundle__nature">
               <img class="photo-bundle__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Красивый кактус">
-              <figcaption class="photo-bundle__caption">Местная растительность</figcaption>
+              <figcaption class="photo-bundle__caption-wrapper">
+                <p class="photo-bundle__caption">Местная растительность</p>
+                <p class="photo-bundle__author">Автор фото: Сергей</p>
+                <p class="photo-bundle__rating photo-bundle__rating--thumb-up">143</p>
+              </figcaption>
             </figure>
-            <p class="photo-bundle__author">Автор фото: Сергей</p>
-            <p class="photo-bundle__rating photo-bundle__rating--thumb-up">143</p>
           </li>
           <li class="photo-bundle__item">
             <figure class="photo-bundle__north">
               <img class="photo-bundle__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Горный серпантин через лес">
-              <figcaption class="photo-bundle__caption">Дорога на север</figcaption>
+              <figcaption class="photo-bundle__caption-wrapper">
+                <p class="photo-bundle__caption">Дорога на север</p>
+                <p class="photo-bundle__author">Автор фото: Петр</p>
+                <p class="photo-bundle__rating photo-bundle__rating--thumb-up">96</p>
+              </figcaption>
             </figure>
-            <p class="photo-bundle__author">Автор фото: Петр</p>
-            <p class="photo-bundle__rating photo-bundle__rating--thumb-up">96</p>
           </li>
           <li class="photo-bundle__item">
             <figure class="photo-bundle__mounts">
               <img class="photo-bundle__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Каменный перешеек между скал">
-              <figcaption class="photo-bundle__caption">Мост дьявола</figcaption>
+              <figcaption class="photo-bundle__caption-wrapper">
+              <p class="photo-bundle__caption">Мост дьявола</p>
+              <p class="photo-bundle__author">Автор фото: Антон</p>
+              <p class="photo-bundle__rating photo-bundle__rating--thumb-up">254</p>
+              </figcaption>
             </figure>
-            <p class="photo-bundle__author">Автор фото: Антон</p>
-            <p class="photo-bundle__rating photo-bundle__rating--thumb-up">254</p>
           </li>
         </ul>
       </section>
@@ -85,7 +95,13 @@
         <h2 class="visually-hidden">Видеопрезентация для сомневающихся</h2>
         <p class="doubts__slogan">Все еще сомневаетесь?</p>
         <p class="doubts__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <!-- <div class="doubts__image-slider"></div>-->
+        <div class="doubts__video-wrapper">
+          <video class="doubts__video"></video>
+          <div class="doubts__controls">
+            <div class="doubts__control-toggle"></div>
+            <div class="doubts__control-buttons"></div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -94,13 +110,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
+            <a class="social__link social__link--twitter" href="#">T</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+            <a class="social__link social__link--facebook" href="#">Fb</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">youtube</a>
+            <a class="social__link social__link--youtube" href="#">YT</a>
           </li>
         </ul>
       </div>

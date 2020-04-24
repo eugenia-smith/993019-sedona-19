@@ -1,35 +1,34 @@
-.author-data{
+.author-contacts{
 
 }
 
-.author-data__slogan{
+.author-contacts__slogan{
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
 }
 
-.author-data__list{
+.author-contacts__list{
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
-.author-data__item{
+.author-contacts__item{
 
 }
 
-.author-data__heading{
+.author-contacts__heading{
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
-  text-align: left;
   color: #333333;
 }
 
-.author-data__field{
-  width: 192px;
+.author-contacts__field{
   min-height: 58px;
+  width: 280px;
   border: none;
   background-color: #f2f2f2;
   font-size: 18px;
@@ -48,39 +47,47 @@
   }
 }
 
-.author-data__field--name{
-  width: 230px;
-}
 
 @media(min-width: @tablet-width){
 
-  .author-data{
+  .author-contacts{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 324px;
+    align-items: center;
   }
 
-  .author-data__field{
-    width: 178px;
+  .author-contacts{
+    align-items: center;
   }
 
-  .author-data__field--name{
-    width: 216px;
+  .author-contacts__list{
+    width: 648px;
+    padding: 0;
+  }
+
+  .author-contacts__field{
+    width: 648px;
   }
 }
 
 @media(min-width: @desktop-width){
 
-  .author-data{
-    width: 480px;
+    .author-contacts{
+    margin-top: 58px;
   }
 
-  .author-data__field{
-    width: 314px;
+  .author-contacts__list{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
   }
 
-  .author-data__field--name{
-    width: 350px;
+  .author-contacts__item{
+    display: flex;
+    align-items: center;
+  }
+
+  .author-contacts__field{
+    width: 315px;
   }
 }

@@ -1,3 +1,9 @@
+.booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .booking__header{
   font-size: 21px;
   font-weight: bold;
@@ -15,6 +21,8 @@
 .booking__find{
   min-height: 58px;
   width: 280px;
+  margin: 0;
+  padding: 0;
   border: none;
   background-color: @bg-blue;
   font-family: "PT Sans", sans-serif;
@@ -32,5 +40,21 @@
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
+
+}
+
+@media(min-width: @tablet-width){
+
+  .booking__find{
+    width: 458px;
+    margin: 50px 0;
+  }
+
+  .booking__header{
+    font-size: 30px;
+  }
+}
+
+@media(min-width: @desktop-width){
 
 }

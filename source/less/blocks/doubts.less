@@ -16,3 +16,79 @@
   text-align: center;
   color: #333333;
 }
+
+.doubts__video-wrapper{
+  position: relative;
+
+}
+
+.doubts__video{
+  display: block;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-size: cover;
+  width: 320px;
+  height: 201px;
+
+}
+
+.doubts__controls{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -52px;
+  position: absolute;
+  left: 20px;
+}
+
+.doubts__control-toggle{
+  min-height: 45px;
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.3)
+}
+
+.doubts__control-buttons{
+  min-height: 66px;
+  width: 280px;
+  background-color: #f2f2f2;
+
+}
+
+@media(min-width: @tablet-width){
+
+  .doubts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doubts__slogan{
+    font-size: 30px;
+  }
+
+  .doubts__video{
+    min-height: 499px;
+    width: 648px;
+  }
+
+  .doubts__controls{
+    flex-direction: row;
+    min-height: 93px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .doubts__control-toggle{
+    display: none;
+}
+
+  .doubts__control-buttons{
+    display: none;
+  }
+
+}
+
+@media(min-width: @desktop-width){
+
+}
