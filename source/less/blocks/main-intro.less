@@ -1,8 +1,10 @@
 .main-intro{
-
+  position: relative;
 }
 
 .main-intro__slogan{
+  margin: 0;
+  padding: 40px 25px 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -10,10 +12,21 @@
 }
 
 .main-intro__text{
+  margin: 0;
+  padding: 28px 20px 5px;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   text-align: center;
+}
+
+@media(max-width: @mobile-width-only){
+
+  .main-intro::after{
+    content: url(../img/bg-triangle.svg);
+    position: absolute;
+    top: 200px;
+  }
 }
 
 @media(min-width: @tablet-width){

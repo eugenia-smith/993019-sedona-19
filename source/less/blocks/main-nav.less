@@ -56,7 +56,6 @@
   }
 }
 
-
 .main-nav__list{
 
 }
@@ -65,10 +64,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.main-nav--opened .main-nav__logo{
-  top: 271px;
+  z-index: 3;
 }
 
 .main-nav--closed .main-nav__logo{
@@ -81,6 +77,10 @@
 
 
 @media(max-width: @mobile-width-only){
+
+  .main-nav--opened .main-nav__logo{
+    top: 224px;
+  }
 
   .main-nav--closed .site-list{
     display: none;
