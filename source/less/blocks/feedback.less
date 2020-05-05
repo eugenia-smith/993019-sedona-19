@@ -9,10 +9,18 @@
   align-items: center;
 }
 
+.feedback__result{
+  margin-top: 52px;
+}
+
+.feedback__required{
+  display: none;
+  font-size: 14px;
+}
+
 .feedback__btn{
   min-height: 58px;
   width: 280px;
-  margin-top: 52px;
   padding: 0;
   border: none;
   background-color: @bg-blue;
@@ -50,8 +58,19 @@
   }
 
   .feedback__btn{
-    margin-top: 58px;
     width: 324px;
+  }
+
+  .feedback__result{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 58px;
+  }
+
+  .feedback__required{
+    display: block;
+    margin-left: auto;
   }
 }
 
@@ -65,5 +84,4 @@
   .feedback__btn{
     width: 480px;
   }
-
 }
