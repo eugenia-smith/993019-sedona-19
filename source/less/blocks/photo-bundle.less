@@ -5,8 +5,11 @@
 }
 
 .photo-bundle__item{
-  margin-top: 50px;
+  margin-top: 42px;
+}
 
+.photo-bundle__image{
+  display: block;
 }
 
 .photo-bundle__scape{
@@ -14,7 +17,7 @@
 }
 
 .photo-bundle__nature{
-  margin: 0;
+  margin: -7px 0;
 }
 
 .photo-bundle__north{
@@ -22,11 +25,17 @@
 }
 
 .photo-bundle__mounts{
-  margin: 0;
+  margin: -10px 0;
+}
+
+.photo-bundle__caption-wrapper{
+  position: relative;
+  padding-top: 5px;
 }
 
 .photo-bundle__caption{
   margin: 0;
+  padding-top: 10px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
@@ -45,11 +54,19 @@
 
 .photo-bundle__rating{
   margin:0;
+  padding: 7px 37px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
   text-align: left;
+
+  &::before{
+    content: url(../img/icon-like.svg);
+    position: absolute;
+    left: 0;
+  }
 }
+
 
 @media(min-width: @tablet-width){
   .photo-bundle{
