@@ -33,6 +33,10 @@
 
 @media(min-width: @tablet-width){
 
+  .main-screen--index::before{
+    display: none;
+  }
+
   .main-screen--index::after{
     content: url(../img/bg-intro-triangle-tablet.svg);
     position: absolute;
@@ -47,4 +51,10 @@
 
 @media(min-width: @desktop-width){
 
+.main-screen--index::after{
+    content: url(../img/bg-intro-triangle-desktop.svg);
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+  }
 }
