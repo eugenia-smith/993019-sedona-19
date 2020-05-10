@@ -107,7 +107,7 @@
   .reasons__blue-block{
     box-sizing: border-box;
     width: 256px;
-    padding: 47px;
+    padding: 47px 47px 30px;
   }
 
   .reasons__features-list,
@@ -117,12 +117,61 @@
   }
 
   .reasons__features-list{
-    padding: 0;
+    padding: 0px;
   }
 
   .reasons__item{
+    padding: 57px 47px 43px;
     width: 256px;
   }
+
+  .reasons__item--accommodation::before{
+    content: url(../img/icon-house.svg);
+  }
+
+  .reasons__item--food::before{
+    content: url(../img/icon-burger.svg);
+  }
+
+  .reasons__item--souvenirs{
+    order: 2;
+
+    &::before{
+    content: url(../img/icon-gift.svg);
+    }
+  }
+
+  .reasons__slogan{
+    margin-top: 20px;
+    font-size: 21px;
+  }
+
+  .reasons__slogan--white{
+    margin-top: 0px;
+  }
+
+  .reasons__text{
+    margin-top: 20px
+  }
+
+  .reasons__text--white{
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+
+  .reasons__pros-list .reasons__item{
+    padding: 22px 54px 24px;
+  }
+
+  .reasons__pros-list .reasons__text{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reasons__line-2 .reasons__slogan--white{
+    padding: 0 6px;
+  }
+
 }
 
 @media(min-width: @desktop-width){
@@ -131,7 +180,36 @@
   }
 
   .reasons__item{
+    padding: 57px 70px 43px;
     width: 400px;
+  }
+
+  .reasons__slogan{
+    padding: 0 70px;
+  }
+
+  .reasons__slogan--white{
+    padding: 5px 50px;
+  }
+
+  .reasons__text--white{
+    padding: 0 20px;
+  }
+
+  .reasons__features-list{
+    margin-bottom: 20px;
+  }
+
+  .reasons__line-2 .reasons__slogan--white{
+    padding: 6px 78px;
+  }
+
+  .reasons__line-2 .reasons__text--white{
+    padding: 0 37px;
+  }
+
+  .reasons__pros-list .reasons__item{
+    padding-bottom: 46px;
   }
 }
 

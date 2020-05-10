@@ -43,6 +43,7 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
 @media(max-width: @mobile-width-only){
 
   .booking{
@@ -56,6 +57,10 @@
 
 @media(min-width: @tablet-width){
 
+  .booking{
+    margin-top: 54px;
+  }
+
   .booking__find{
     width: 458px;
     margin: 50px 0;
@@ -64,8 +69,24 @@
   .booking__header{
     font-size: 30px;
   }
+
+  .booking__description{
+    padding: 0 100px;
+    margin-top: 33px;
+  }
+
+  .booking__find{
+    margin: 5px 0 60px;
+  }
 }
 
 @media(min-width: @desktop-width){
 
+  .booking__description{
+    padding: 0 365px;
+  }
+
+    .booking__find{
+    margin: 11px 0 66px;
+  }
 }
