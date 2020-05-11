@@ -6,11 +6,9 @@
 .main-nav__toggle{
   width: 23px;
   height: 21px;
-
   position: absolute;
   top: 16px;
   right: 20px;
-
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -18,32 +16,25 @@
 
 .main-nav--closed .main-nav__toggle::before{
     content: "";
-
     position: absolute;
     top: 0;
     right: 0;
-
     width: 23px;
     height: 4px;
-
     background-color: @bg-blue;
     box-shadow: 0 8px 0 0 @bg-blue,  0 16px 0 0 @bg-blue;
   }
-
 
 .main-nav--opened .main-nav__toggle{
 
   &::before,
   &::after{
     content: "";
-
     position: absolute;
     top: 15px;
     right: 0;
-
     width: 32px;
     height: 4px;
-
     background-color: #ffffff;
   }
 

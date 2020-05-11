@@ -23,7 +23,6 @@
 
 .doubts__video-wrapper{
   position: relative;
-
 }
 
 .doubts__video{
@@ -51,10 +50,52 @@
 }
 
 .doubts__control-buttons{
+  position: relative;
   min-height: 66px;
   width: 280px;
   background-color: #f2f2f2;
+}
 
+.doubts__btn-replay{
+  border: none;
+  background-color: transparent;
+
+  &::after{
+    content: url(../img/icon-video-replay.svg);
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    top: 25px;
+    left: 25px;
+  }
+}
+
+.doubts__btn-subs{
+  border: none;
+  background-color: transparent;
+
+  &::after{
+    content: url(../img/icon-video-subtitles.svg);
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    top: 25px;
+    right: 74px;
+  }
+}
+
+.doubts__btn-fullscreen{
+  border: none;
+  background-color: transparent;
+
+  &::after{
+    content: url(../img/icon-video-fullscreen.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 25px;
+    right: 23px;
+  }
 }
 
 @media(min-width: @tablet-width){
@@ -85,7 +126,6 @@
   }
 
   .doubts__controls{
-    flex-direction: row;
     min-height: 93px;
     width: 100%;
     left: 0;
@@ -98,7 +138,20 @@
 }
 
   .doubts__control-buttons{
-    display: none;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .doubts__btn-replay::after{
+    left: 35px;
+  }
+
+  .doubts__btn-subs::after{
+    right: 92px;
+  }
+
+  .doubts__btn-fullscreen::after{
+    right: 41px;
   }
 
 }
