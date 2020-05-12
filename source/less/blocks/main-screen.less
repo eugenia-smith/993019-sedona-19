@@ -1,18 +1,22 @@
 .main-screen{
-  padding: 35px 0;
-  min-height: 158px;
+  position: relative;
+  padding-top: 50px;
+  min-height: 156px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 241%;
   text-align: center;
 }
 
 .main-screen--index{
+  padding-top: 90px;
   min-height: 389px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position-x: center;
 }
 
 .main-screen__badge{
-
 
 }
 
@@ -20,13 +24,64 @@
 
 }
 
+@media(max-width: @mobile-width-only){
+
+  .main-screen::before{
+    content: url(../img/bg-intro-triangle-mobile.svg);
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+  }
+}
+
 @media(min-width: @tablet-width){
 
+  .main-screen--index{
+    min-height: 518px;
+  }
+
+  .main-screen--index::before{
+    display: none;
+  }
+
+  .main-screen--index::after{
+    content: url(../img/bg-intro-triangle-tablet.svg);
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+  }
+
   .main-screen{
+    min-height: 290px;
     padding: 70px;
+  }
+
+  .main-screen::after{
+    content: url(../img/bg-intro-triangle-tablet.svg);
+    position: absolute;
+    bottom: -8px;
+    right: 0;
   }
 }
 
 @media(min-width: @desktop-width){
 
+  .main-screen{
+    min-height: 301px;
+
+    &::after{
+      content: url(../img/bg-intro-triangle-desktop.svg);
+      position: absolute;
+      bottom: -8px;
+      right: 0;
+    }
+  }
+
+
+  .main-screen--index::after{
+    content: url(../img/bg-intro-triangle-desktop.svg);
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+  }
 }

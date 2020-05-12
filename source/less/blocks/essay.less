@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 
 }
 
 .essay__slogan{
+  margin: 15px 0 15px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -13,6 +15,7 @@
 }
 
 .essay__field{
+  padding: 30px 8px 0;
   border: none;
   background-color: #f2f2f2;
   font-size: 18px;
@@ -26,17 +29,24 @@
 @media(min-width: @tablet-width){
 
   .essay{
-    width: 648px;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .essay__slogan{
+    margin-bottom: 57px;
+    font-size: 21px;
   }
 
   .essay__field{
+    padding: 20px;
     width: 100%;
   }
 }
 
 @media(min-width: @desktop-width){
   .essay{
-    margin-top: 58px;
+    margin-top: 39px;
     width: 960px;
   }
 

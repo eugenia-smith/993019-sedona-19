@@ -1,4 +1,5 @@
 .feedback{
+  margin-bottom: 37px;
 
 }
 
@@ -8,9 +9,19 @@
   align-items: center;
 }
 
+.feedback__result{
+  margin-top: 52px;
+}
+
+.feedback__required{
+  display: none;
+  font-size: 14px;
+}
+
 .feedback__btn{
   min-height: 58px;
   width: 280px;
+  padding: 0;
   border: none;
   background-color: @bg-blue;
   font-family: "PT Sans", sans-serif;
@@ -36,6 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
   }
 
   .feedback__form{
@@ -47,8 +59,19 @@
   }
 
   .feedback__btn{
-    margin-top: 58px;
     width: 324px;
+  }
+
+  .feedback__result{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .feedback__required{
+    display: block;
+    margin-left: auto;
   }
 }
 
@@ -63,4 +86,7 @@
     width: 480px;
   }
 
+  .feedback__result{
+
+  }
 }

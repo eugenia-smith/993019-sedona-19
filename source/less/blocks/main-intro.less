@@ -1,8 +1,10 @@
 .main-intro{
-
+  position: relative;
 }
 
 .main-intro__slogan{
+  margin: 0;
+  padding: 40px 25px 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -10,23 +12,64 @@
 }
 
 .main-intro__text{
+  margin: 0;
+  padding: 22px 23px 5px;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   text-align: center;
 }
 
+.main-intro__text--index{
+  padding: 28px 20px 5px;
+}
+
+@media(max-width: @mobile-width-only){
+
+  .main-intro--index::after{
+    content: url(../img/bg-triangle.svg);
+    position: absolute;
+    top: 200px;
+  }
+}
+
 @media(min-width: @tablet-width){
+
+  .main-intro{
+    margin-top: 37px;
+  }
 
   .main-intro__slogan{
     font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .main-intro__text{
+    padding: 20px 162px 23px;
   }
 
   .main-intro__slogan--index{
+    padding: 50px 100px 30px;
     font-size: 21px;
+  }
+
+  .main-intro__text--index{
+    padding: 0;
+    margin-bottom: 50px;
   }
 }
 
 @media(min-width: @desktop-width){
 
+  .main-intro{
+    margin-top: 72px;
+  }
+
+  .main-intro__slogan--index{
+    padding: 52px 287px 28px;
+  }
+
+  .main-intro__text{
+    padding: 20px 378px 11px;
+  }
 }

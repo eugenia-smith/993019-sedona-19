@@ -1,8 +1,11 @@
 .doubts{
+  margin-top: 53px;
+  margin-bottom: 100px;
 
 }
 
 .doubts__slogan{
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -10,6 +13,7 @@
 }
 
 .doubts__text{
+  padding: 15px 25px 20px;
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
@@ -19,7 +23,6 @@
 
 .doubts__video-wrapper{
   position: relative;
-
 }
 
 .doubts__video{
@@ -35,8 +38,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -52px;
   position: absolute;
+  bottom: -66px;
   left: 20px;
 }
 
@@ -46,11 +49,86 @@
   background-color: rgba(0, 0, 0, 0.3)
 }
 
+.doubts__bar{
+  position: absolute;
+  top: 22px;
+  height: 3px;
+  width: 235px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.doubts__bar-status{
+  position: absolute;
+  top: 18px;
+  left: 57px;
+  width: 10px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 .doubts__control-buttons{
+  position: relative;
   min-height: 66px;
   width: 280px;
   background-color: #f2f2f2;
+}
 
+.doubts__btn-replay{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 16px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+
+  &::after{
+    content: url(../img/icon-video-replay.svg);
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.doubts__btn-subs{
+  position: absolute;
+  top: 25px;
+  right: 74px;
+  width: 32px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+
+  &::after{
+    content: url(../img/icon-video-subtitles.svg);
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.doubts__btn-fullscreen{
+  position: absolute;
+  top: 25px;
+  right: 23px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+
+  &::after{
+    content: url(../img/icon-video-fullscreen.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+  }
 }
 
 @media(min-width: @tablet-width){
@@ -59,10 +137,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 66px;
+    margin-bottom: 38px;
   }
 
   .doubts__slogan{
     font-size: 30px;
+  }
+
+  .doubts__text{
+    padding: 18px 170px 20px;
+  }
+
+  .doubts__video-wrapper{
+    margin-top: 40px;
   }
 
   .doubts__video{
@@ -71,24 +159,72 @@
   }
 
   .doubts__controls{
-    flex-direction: row;
+    bottom: 0;
+    left: 0;
     min-height: 93px;
     width: 100%;
-    left: 0;
-    bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   .doubts__control-toggle{
     display: none;
-}
-
-  .doubts__control-buttons{
-    display: none;
   }
 
+  .doubts__bar{
+    position: absolute;
+    top: 45px;
+    width: 389px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+.doubts__bar-status{
+    position: absolute;
+    top: 41px;
+    left: 30%;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .doubts__control-buttons{
+    width: 100%;
+    background-color: transparent;
+  }
 }
 
 @media(min-width: @desktop-width){
+
+  .doubts{
+    margin-top: 70px;
+    margin-bottom: 83px;
+  }
+
+  .doubts__text{
+    padding: 18px 380px 20px;
+  }
+
+  .doubts__video{
+    min-height: 499px;
+    width: 800px;
+  }
+
+    .doubts__bar{
+    position: absolute;
+    top: 45px;
+    width: 540px;
+    left: 93px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+.doubts__bar-status{
+    position: absolute;
+    top: 41px;
+    left: 25%;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
 
 }
