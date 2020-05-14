@@ -26,7 +26,6 @@
   }
 
 .main-nav--opened .main-nav__toggle{
-
   &::before,
   &::after{
     content: "";
@@ -68,7 +67,6 @@
 
 
 @media(max-width: @mobile-width-only){
-
   .main-nav--opened .main-nav__logo{
     top: 224px;
   }
@@ -100,7 +98,6 @@
 }
 
 @media(min-width: @tablet-width){
-
   .main-nav__logo{
     top: 0;
   }
@@ -112,4 +109,7 @@
     .main-nav__toggle{
       display: none;
   }
+}
+
+@media(min-width: @desktop-width){
 }
