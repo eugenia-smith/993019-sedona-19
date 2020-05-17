@@ -20,6 +20,7 @@
 }
 
 .sights__item{
+  position: relative;
   min-height: 50px;
   margin: 31px 0 0;
 
@@ -27,10 +28,46 @@
 
 .sights__checker{
 
+  &:checked,
+  &:not(:checked){
+    position: absolute;
+    left: -9999px;
+  }
+}
+
+.sights__checker:checked + .sights__heading::before,
+.sights__checker:not(:checked) + .sights__heading::before{
+  content: "";
+  position: absolute;
+  bottom: 10px ;
+  left: -20px ;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+}
+
+.sights__checker:checked + .sights__heading::after,
+.sights__checker:not(:checked) + .sights__heading::after{
+  content: url(../img/icon-tick.svg);
+  position:absolute;
+  top: 3px;
+  left: -5px;
+  width: 24px;
+  height: 16px;
+}
+
+.sights__checker:not(:checked) + .sights__heading::after{
+  opacity: 0;
+}
+
+.sights__checker:checked + .sights__heading::after{
+  opacity: 1;
 }
 
 .sights__heading{
-  padding-left: 40px;
+  padding-left: 60px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
