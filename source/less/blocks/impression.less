@@ -20,6 +20,7 @@
 }
 
 .impression__item{
+  position: relative;
   min-height: 50px;
   margin-bottom: 20px;
 
@@ -27,6 +28,43 @@
 
 .impression__field{
 
+  &:checked,
+  &:not(:checked){
+    position: absolute;
+    left: -9999px;
+  }
+}
+
+.impression__field:checked + .impression__heading::before,
+.impression__field:not(:checked) + .impression__heading::before{
+  content: "";
+  position: absolute;
+  left: -30px;
+  bottom: 13px;
+  width: 46px;
+  height: 46px;
+  border-radius:100%;
+  background-color: #f2f2f2;
+}
+
+.impression__field:checked + .impression__heading::after,
+.impression__field:not(:checked) + .impression__heading::after{
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 28px;
+  width: 16px;
+  height: 16px;
+  border-radius:100%;
+  background-color: #333333;
+}
+
+.impression__field:not(:checked) + .impression__heading::after{
+  opacity: 0;
+}
+
+.impression__field:checked + .impression__heading::after{
+  opacity: 1;
 }
 
 .impression__heading{

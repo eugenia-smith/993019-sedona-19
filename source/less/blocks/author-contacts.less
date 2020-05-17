@@ -16,8 +16,8 @@
 }
 
 .author-contacts__item{
+  position: relative;
   margin-bottom: 10px;
-
 }
 
 .author-contacts__heading{
@@ -52,6 +52,35 @@
   }
 }
 
+.author-contacts__btn{
+  position: absolute;
+  border: none;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.author-contacts__btn--phone{
+  top: 37px;
+  right: 0;
+
+  &::before{
+    content: url(../img/icon-phone.svg);
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.author-contacts__btn--mail{
+  bottom: 0;
+  right: 0;
+
+  &::before{
+    content: url(../img/icon-mail.svg);
+    width: 16px;
+    height: 12px;
+  }
+}
 
 @media(min-width: @tablet-width){
 
@@ -114,5 +143,9 @@
 
   .author-contacts__field{
     width: 315px;
+  }
+
+  .author-contacts__btn--phone{
+  top: 10px;
   }
 }
