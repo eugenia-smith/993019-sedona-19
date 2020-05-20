@@ -146,6 +146,26 @@
 
   .author-contacts__slogan{
     margin-bottom: 64px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -340px;
+      width: 278px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+
+     &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -340px;
+      width: 278px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
   }
 
   .author-contacts__heading{
