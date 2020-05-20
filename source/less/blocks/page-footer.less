@@ -25,12 +25,12 @@
 }
 
 @media(min-width: @tablet-width){
-
   .page-footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     min-height: 120px;
+    padding-top: 0;
   }
 
   .page-footer__copyright,
@@ -41,5 +41,11 @@
 }
 
 @media(min-width: @desktop-width){
-
+  .page-footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+    padding: 0 120px;
+  }
 }
