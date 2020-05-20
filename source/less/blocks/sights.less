@@ -102,8 +102,29 @@
   }
 
   .sights__slogan{
+    position: relative;
     padding: 0 130px;
     font-size: 21px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -5px;
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      width: 125px;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
   }
 
   .sights__list{
