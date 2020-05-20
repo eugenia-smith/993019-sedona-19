@@ -49,14 +49,16 @@
   height: 52px;
   border-radius:50%;
   background-color: #f2f2f2;
+}
 
-  &:hover{
-    background-color: #e5e5e5;
-  }
+.impression__field:not(:checked) + .impression__heading:hover::before,
+.impression__field:checked + .impression__heading:hover::before,{
+  background-color: #e5e5e5;
+}
 
-  &:focus{
-    background-color: #d5d5d5;
-  }
+.impression__field:checked:active + .impression__heading::before,
+.impression__field:not(:checked):active + .impression__heading::before{
+  background-color: #d5d5d5
 }
 
 .impression__field:checked + .impression__heading::after,
@@ -69,10 +71,10 @@
   height: 18px;
   border-radius:50%;
   background-color: #333333;
+}
 
-  &:active{
-    opacity: 0.3;
-  }
+.impression__field:checked:active + .impression__heading::after{
+  opacity: 0.3;
 }
 
 .impression__field:not(:checked) + .impression__heading::after{
