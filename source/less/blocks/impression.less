@@ -30,15 +30,6 @@
 
 }
 
-.impression__field{
-
-  &:checked,
-  &:not(:checked){
-    position: absolute;
-    left: -9999px;
-  }
-}
-
 .impression__field:checked + .impression__heading::before,
 .impression__field:not(:checked) + .impression__heading::before{
   content: "";
@@ -54,6 +45,11 @@
 .impression__field:not(:checked) + .impression__heading:hover::before,
 .impression__field:checked + .impression__heading:hover::before,{
   background-color: #e5e5e5;
+}
+
+.impression__field:not(:checked):focus + .impression__heading::before,
+.impression__field:checked:focus + .impression__heading:hover::before,{
+  outline: rgb(59, 153, 252) auto 5px;;
 }
 
 .impression__field:checked:active + .impression__heading::before,
@@ -86,7 +82,7 @@
 }
 
 .impression__heading{
-  padding-left: 58px;
+  padding-left: 43px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;

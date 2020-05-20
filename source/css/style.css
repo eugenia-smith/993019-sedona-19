@@ -1651,11 +1651,6 @@ a {
   min-height: 50px;
   margin-bottom: 20px;
 }
-.impression__field:checked,
-.impression__field:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
 .impression__field:checked + .impression__heading::before,
 .impression__field:not(:checked) + .impression__heading::before {
   content: "";
@@ -1670,6 +1665,10 @@ a {
 .impression__field:not(:checked) + .impression__heading:hover::before,
 .impression__field:checked + .impression__heading:hover::before {
   background-color: #e5e5e5;
+}
+.impression__field:not(:checked):focus + .impression__heading::before,
+.impression__field:checked:focus + .impression__heading:hover::before {
+  outline: #3b99fc auto 5px;
 }
 .impression__field:checked:active + .impression__heading::before,
 .impression__field:not(:checked):active + .impression__heading::before {
@@ -1696,7 +1695,7 @@ a {
   opacity: 1;
 }
 .impression__heading {
-  padding-left: 58px;
+  padding-left: 43px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
