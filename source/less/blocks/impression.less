@@ -93,9 +93,19 @@
 @media(min-width: @tablet-width){
 
   .impression{
+    position: relative;
     align-items: flex-start;
     width: 324px;
     order: -1;
+    border: none;
+  }
+
+  .impression::after{
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 292px;
+    background-color: #f2f2f2;
   }
 
   .impression__list{
