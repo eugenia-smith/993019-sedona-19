@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   margin-top: 17px;
+  padding: 0;
+  border-top: 1px solid #f2f2f2;
+
 }
 
 .impression__slogan{
@@ -20,17 +24,65 @@
 }
 
 .impression__item{
+  position: relative;
   min-height: 50px;
   margin-bottom: 20px;
 
 }
 
-.impression__field{
+.impression__field:checked + .impression__heading::before,
+.impression__field:not(:checked) + .impression__heading::before{
+  content: "";
+  position: absolute;
+  left: -18px;
+  bottom: 9px;
+  width: 52px;
+  height: 52px;
+  border-radius:50%;
+  background-color: #f2f2f2;
+}
 
+.impression__field:not(:checked) + .impression__heading:hover::before,
+.impression__field:checked + .impression__heading:hover::before,{
+  background-color: #e5e5e5;
+}
+
+.impression__field:not(:checked):focus + .impression__heading::before,
+.impression__field:checked:focus + .impression__heading:hover::before,{
+  outline: rgb(59, 153, 252) auto 5px;;
+}
+
+.impression__field:checked:active + .impression__heading::before,
+.impression__field:not(:checked):active + .impression__heading::before{
+  background-color: #d5d5d5
+}
+
+.impression__field:checked + .impression__heading::after,
+.impression__field:not(:checked) + .impression__heading::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 25px;
+  width: 18px;
+  height: 18px;
+  border-radius:50%;
+  background-color: #333333;
+}
+
+.impression__field:checked:active + .impression__heading::after{
+  opacity: 0.3;
+}
+
+.impression__field:not(:checked) + .impression__heading::after{
+  opacity: 0;
+}
+
+.impression__field:checked + .impression__heading::after{
+  opacity: 1;
 }
 
 .impression__heading{
-  padding-left: 40px;
+  padding-left: 43px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -41,9 +93,11 @@
 @media(min-width: @tablet-width){
 
   .impression{
+    position: relative;
     align-items: flex-start;
     width: 324px;
     order: -1;
+    border: none;
   }
 
   .impression__list{

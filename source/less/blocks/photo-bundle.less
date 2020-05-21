@@ -1,11 +1,23 @@
 .photo-bundle{
   list-style: none;
-  margin-top: 42px;
-  padding: 0 20px;
+  margin-top: 21px;
+  padding: 0;
 }
 
 .photo-bundle__item{
-  margin-bottom: 42px;
+  padding: 0 20px 10px;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.photo-bundle__item:first-child{
+  padding-top: 21px;
+  padding-bottom: 10px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.photo-bundle__item:nth-child(3){
+  padding-top: 4px;
 }
 
 .photo-bundle__image{
@@ -17,7 +29,7 @@
 }
 
 .photo-bundle__nature{
-  margin: -7px 0;
+  margin: 0;
 }
 
 .photo-bundle__north{
@@ -25,7 +37,7 @@
 }
 
 .photo-bundle__mounts{
-  margin: -10px 0;
+  margin: 0;
 }
 
 .photo-bundle__caption-wrapper{
@@ -54,22 +66,22 @@
 
 .photo-bundle__rating{
   margin:0;
-  padding: 7px 37px;
+  padding: 7px 30px;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
   text-align: left;
+}
 
-  &::before{
+.photo-bundle__icon-like{
     content: url(../img/icon-like.svg);
     position: absolute;
     left: 0;
-  }
+    fill: #000000;
 }
 
 
 @media(min-width: @tablet-width){
-
   .photo-bundle{
     display: flex;
     flex-direction: row;
@@ -81,10 +93,18 @@
 
   .photo-bundle__item:first-child{
     width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-bundle__item:nth-child(3){
+    padding-top: 0;
   }
 
   .photo-bundle__item{
     margin: 0;
+    padding: 0;
+    border: none;
   }
 
   .photo-bundle__caption-wrapper{
@@ -105,13 +125,16 @@
     position: absolute;
     top: 20px;
     right: 0;
-    padding-right: 20px;
+    padding-right: 30px;
+  }
+
+  .photo-bundle__icon-like{
+    opacity: 0.3;
   }
 
   .photo-bundle__scape .photo-bundle__image{
     min-height: 400px;
     width: 100%;
-    /*временно, для ПП*/
   }
 
   .photo-bundle__mounts,
@@ -121,14 +144,12 @@
 
     & .photo-bundle__image{
     width: 324px;
-    height: 267px;
-    /*временно для подгонки по ПП*/
+    height: auto;
     }
   }
 }
 
 @media(min-width: @desktop-width){
-
   .photo-bundle{
     width: 100%;
     margin-top: 58px;
@@ -149,6 +170,11 @@
     color: #ffffff;
   }
 
+  .photo-bundle__icon-like{
+    opacity: 1;
+    fill: #ffffff;
+  }
+
   .photo-bundle__caption-wrapper{
     position: absolute;
     bottom: 0;
@@ -163,7 +189,6 @@
     & .photo-bundle__image{
     width: 400px;
     height: 267px;
-    /*временно для подгонки по ПП*/
     }
   }
 }

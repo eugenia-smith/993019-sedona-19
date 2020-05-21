@@ -20,6 +20,11 @@
   text-align: center;
 }
 
+.booking__map{
+  width: 320px;
+  height: 350px;
+}
+
 .booking__find{
   min-height: 58px;
   width: 280px;
@@ -45,7 +50,6 @@
 }
 
 @media(max-width: @mobile-width-only){
-
   .booking{
     padding: 28px 20px 0;
   }
@@ -56,14 +60,18 @@
 }
 
 @media(min-width: @tablet-width){
-
   .booking{
+    padding: 0;
     margin-top: 54px;
   }
 
   .booking__find{
+    margin: 5px 0 60px;
     width: 458px;
-    margin: 50px 0;
+  }
+
+  .booking__map{
+    width: 768px;
   }
 
   .booking__header{
@@ -74,19 +82,18 @@
     padding: 0 100px;
     margin-top: 33px;
   }
-
-  .booking__find{
-    margin: 5px 0 60px;
-  }
 }
 
 @media(min-width: @desktop-width){
-
   .booking__description{
     padding: 0 365px;
   }
 
-    .booking__find{
+  .booking__map{
+    width: 1200px;
+  }
+
+  .booking__find{
     margin: 11px 0 66px;
   }
 }
