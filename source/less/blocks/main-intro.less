@@ -13,7 +13,7 @@
 
 .main-intro__text{
   margin: 0;
-  padding: 22px 24px 5px;
+  padding: 22px 23px 5px;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
@@ -22,6 +22,10 @@
 
 .main-intro__text--index{
   padding: 28px 20px 7px;
+}
+
+.main-intro__if-needed{
+  display: none;
 }
 
 @media(max-width: @mobile-width-only){
@@ -55,6 +59,10 @@
     padding: 0;
     margin-bottom: 50px;
   }
+
+  .main-intro__if-needed{
+    display: inline;
+  }
 }
 
 @media(min-width: @desktop-width){
@@ -67,6 +75,6 @@
   }
 
   .main-intro__text{
-    padding: 20px 378px 11px;
+    padding: 20px 350px 11px;
   }
 }
