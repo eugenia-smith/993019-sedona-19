@@ -58,30 +58,24 @@
   position: absolute;
   border: none;
   width: 58px;
-  height: 56px;
+  height: 58px;
   background-color: #e6e6e6;
 }
 
 .author-contacts__btn--phone{
   top: 35px;
   right: 0;
-
-  &::before{
-    content: url(../img/icon-phone.svg);
-    width: 18px;
-    height: 18px;
-  }
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .author-contacts__btn--mail{
   bottom: 0;
   right: 0;
-
-  &::before{
-    content: url(../img/icon-mail.svg);
-    width: 16px;
-    height: 12px;
-  }
+  background-image: url(../img/icon-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media(min-width: @tablet-width){
