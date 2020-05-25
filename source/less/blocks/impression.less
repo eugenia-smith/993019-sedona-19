@@ -20,14 +20,23 @@
 .impression__list{
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 38px;
 }
 
 .impression__item{
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
+  padding-left: 60px;
+}
 
+.impression__field{
+
+  &:checked,
+  &:not(:checked){
+    position: absolute;
+    left: -9999px;
+  }
 }
 
 .impression__field:checked + .impression__heading::before,
@@ -77,7 +86,6 @@
 }
 
 .impression__heading{
-  padding-left: 38px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -100,12 +108,17 @@
   }
 
   .impression__item{
+    padding-left: 0px;
     margin-bottom: 28px;
   }
 
   .impression__slogan{
     margin-top: 30px;
     font-size: 21px;
+  }
+
+  .impression__heading{
+    padding-left: 51px;
   }
 }
 
